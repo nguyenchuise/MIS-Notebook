@@ -1,0 +1,2 @@
+const exampleBtn = document.getElementById();
+
