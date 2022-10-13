@@ -1,0 +1,268 @@
+#title {
+    background-color: #749F82;
+    color: white;
+    text-align: left;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+}
+.container-fluid {
+    padding: 1% 15% 0;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+.big-header {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-top-width: 4px;
+    border-color: rgb(0, 0, 0);
+    height: 0px;
+    width: 7%;
+    display: inline-block;
+}
+/* Sections */
+.white-section {
+    background-color: #fff;
+}  
+.note-title {
+    margin-bottom: 3rem;
+}
+.colored-section {
+    background-color: #90B77D;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2rem;
+    font-weight: bold;
+}
+.img-nav {
+    border-radius: 10%; width: 50px;
+}
+.navbar {
+    padding: 0 0 4.5rem;
+}
+.nav-item {
+    padding-right: 1rem;
+}
+.nav-link {
+    font-size: 1rem;
+    float: right;
+}
+
+/* Buttons */
+.dl-button {
+    margin: 10% 1% 15%;
+    font-size: smaller;
+    text-align: center;
+}
+.dl-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
+/* Images */
+.title-img {
+    width: 25%;
+    transform: rotate(20deg);
+    margin-left: 8rem;
+    position: absolute;
+    border-radius: 4%;
+}
+.p-title {
+    font-size: 20px;
+    padding: 4% 0;
+    color:rgb(33, 91, 64);
+}
+.descr {
+    font-size: 16px;
+}
+.fas {
+    font-size: 5rem;
+    color: #749F82;
+    margin-bottom: 1rem;
+    padding: 4%;
+}
+.fas:hover {
+    color: #90B77D;
+}
+
+/* Features Section */
+#features p {
+    color: #8f8f8f;
+    width: 250px;
+    margin: 0 auto 2rem;      /* center the block */
+   
+}
+#features {
+    padding: 7% 15%;
+    
+    position: relative;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background-color: #90B77D;
+    height: 30rem;
+}
+
+.testimonial-text {
+    padding: 30px;
+}
+.testimonials-img {
+    width: 7%;
+    border-radius: 50%;
+    margin: 0px 10px 0;
+}
+
+#press {
+    background-color: #90B77D;
+    padding: 3%;
+}
+.press-logo {
+    width: 10%;
+    margin: 20px 30px;
+}
+.carousel-item {
+    padding: 4% 15%;
+}
+
+/* Princing section */
+#documents {
+    padding: 100px;
+}
+.pricing-col {
+    padding: 3% 1%;
+}
+.align-btn1 {
+    padding-bottom: 40px;
+}
+.align-btn2 {
+    padding-bottom: 18px;
+}
+
+/* Diagram section */
+#diagrams {
+    height: 30rem;
+}
+.bt-dark {
+    text-align: center;
+}
+.dia {
+    height: 450px;
+}
+
+
+/* Footer-Contact section */
+#cta {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+    padding: 2%;
+}
+
+#footer {
+    margin: 4% 2 2% 0;
+    padding: 4rem 0 1%;
+}
+#footer a {
+    color: white;
+    margin-bottom: 1%;
+}
+#footer a:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#cta h3 {
+    margin-bottom: 4%;
+    font-size: 2.5rem;
+}
+.ft-button {
+    margin: 0 1% 2%;
+}
+.ft-icon {
+    margin: 2px 7px;
+}
+
+@media (max-width: 1100px) {
+    #title {
+        text-align: center;
+    }
+    .title-img {
+        position: static;
+        transform: rotate(0);
+        width: 60%;
+        margin-left: auto;
+    }
+    .dl-button {
+        margin-bottom: 3%;
+    }
+}
+
+
+
+a {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    color: black;
+  }
+  
+  a::before,
+  a::after {
+   content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  a::before {
+    background-color: #54b3d6;
+    height: 2px;
+    bottom: 0;
+    transform-origin: 100% 50%;
+    transform: scaleX(0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  a::after {
+    content: attr(data-replace);
+    height: 100%;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: #54b3d6;
+  }
+  
+  a:hover::before {
+    transform-origin: 0% 50%;
+    transform: scaleX(1);
+  }
+  a:hover::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  a span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  a:hover span {
+    transform: translate3d(-200%, 0, 0);
+  }
