@@ -69,7 +69,7 @@ hr {
 
 /* Buttons */
 .dl-button {
-    margin: 10% 1% 15%;
+    margin: 15% 1% 15%;
     font-size: smaller;
     text-align: center;
 }
@@ -80,7 +80,7 @@ hr {
 
 /* Images */
 .title-img {
-    width: 25%;
+    width: 23%;
     transform: rotate(20deg);
     margin-left: 8rem;
     position: absolute;
